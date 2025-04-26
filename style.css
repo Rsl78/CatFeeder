@@ -1,0 +1,128 @@
+/*Common Design*/
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root {
+    --primaryColor: #ebbb60;
+    --headerPadding: 10px 40px;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+/*Header Section Design*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Score Design start*/
+#left_side_content {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#left_side_content h1 {
+    padding: var(--headerPadding);
+}
+
+#left_side_content #score_title {
+    background-color: green;
+}
+
+#left_side_content #score_point {
+    background-color: var(--primaryColor);
+}
+
+/*Score Design End*/
+
+/*Expression Section Design Start*/
+#right_side_content {
+    display: flex;
+}
+
+#right_side_content {
+    background-color: #a6b64d;
+    padding: var(--headerPadding);
+    font-size: 20px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+}
+
+/*Expression Section Design End*/
+
+/* Leader Board Design Start*/
+#leaderboard {
+    display: flex;
+    width: 254px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#leaderboard > ul > li {
+    background-color: var(--primaryColor);
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Leader Board Design End */
+
+/*Game Board design Start*/
+#game {
+    margin-top: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100dvh - 220px);
+}
+
+#feeder {
+    position: absolute;
+    height: 75px;
+    padding-left: 20px;
+    z-index: 999;
+}
+
+#cat, #cat2{
+    position: fixed;
+    right: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+#cat2{
+    display: none;
+}
+
+/*Game Board design End*/
+
+/*Footer Design Start*/
+
+footer {
+    position: fixed;
+    left: calc(50% - 150px);
+    bottom: 20px;
+    background-color: gray;
+}
+
+footer #footer_content {
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+    padding: var(--headerPadding);
+}
+
+/*Footer Design End*/
