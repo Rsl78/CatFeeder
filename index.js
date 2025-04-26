@@ -66,7 +66,6 @@ const setStatus = () => {
     }
 }
 
-//comment added for checking
 const showSetStoreItem = (time) => {
     const store = localStorage.getItem('leaderBoard');
     if (store === null) {
